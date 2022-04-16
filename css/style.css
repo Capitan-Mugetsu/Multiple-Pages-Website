@@ -160,6 +160,10 @@ h3 {
     width: 100%;
 }
 
+.btn-form {
+    height: 48px;
+}
+
 /* ------------
     11. =circular img
     ----------- */
@@ -195,6 +199,16 @@ h3 {
     12. =forms
 -------------------------- */
 
+.form-title {
+    font-size: 24px;
+    margin: 0 0 30px;
+    font-weight: 600;
+}
+
+.form-control::placeholder {
+    color: var(--black-70);
+}
+
 .form-group {
     margin-bottom: 25px;
     position: relative;
@@ -225,6 +239,11 @@ h3 {
 
 select.form-control:focus option {
     background-color: var(--select-box-bg-color);
+}
+
+textarea.form-control {
+    height: 120px;
+    resize: none;
 }
 
 /* -------------------------
@@ -1025,4 +1044,28 @@ select.form-control:focus option {
     left: 0;
     top: 9px;
     border-radius: 50%;
+}
+
+/* ---------------------------------
+    27. =contact section
+------------------------------------ */
+
+.contact-item {
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 40px;
+}
+
+.contact-item .icon-box {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    color: var(--WHITE);
 }
